@@ -6,23 +6,27 @@
 @import '_grid';
 
 body{
-  background-color: $mdBlue;
+  background-color: white;
 }
 
 #dashboard-tasks{
-text-align: center;
-padding:0 auto;
-margin-bottom: 50px;
+  text-align: center;
+  padding:0 auto;
+  margin-bottom: 50px;
+  width: 1100px;
+  margin: auto;
 }
 .task-panel{
   margin: 5px 2%;
   text-align:center;
   min-width: 300px;
-  border-color: black;
+  border: 3px solid #F2385A;
 }
 
 .header-dashboard {
-  color: white;
+  color: black;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 .buttons {
@@ -43,4 +47,17 @@ margin-bottom: 50px;
 
 hr {
   width: 700px;
+}
+
+.panel {
+  border-radius: 0px;
+}
+
+.panel-heading {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.project-name {
+  font-size: 28px;
 }

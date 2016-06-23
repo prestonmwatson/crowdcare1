@@ -3,31 +3,22 @@
 @import '_grid';
 
 #deviseWrapperOutside{
-  background-color: lighten($mdBlue,10%);
-  // margin-left: 20%;
-  // margin-right: 20%;
+  background-color: white;
   margin-top: 10%;
   margin-bottom: 10%;
-  padding-bottom: 1em;
-  border-radius: .35em;
-  box-shadow: 30px 0 30px -30px black,
-  -30px 0 30px -30px black;
+  padding-bottom: 50px;
+  border: 5px solid #4AD9D9;
 
   #FormTitleArea{
-    // display:flex;
-    // align-items: center;
-    // justify-content: center;
     margin-top: 0;
     height: 1.5em;
     padding-top: .5em;
     padding-bottom: 1.5em;
-    background-color: darken($mdBlue, 15%);
-    color: #fff;
+    background-color: white;
+    color: #36B1BF;
     text-align: center;
-    //border-top-left-radius: .35em;
-    //border-top-right-radius: .35em;
-    box-shadow: 3px 0 3px -3px black,
-    -3px 0 3px -3px black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
   }
 
   #deviseWrapperInside{
@@ -42,7 +33,7 @@
 }
 
 #new_user{
-  background-color: darken($mdBlue,10%);
+  background-color: white;
   padding: 1.5em;
   width: 25em;
   border-radius: .7em;
@@ -62,6 +53,12 @@
   text-align: left;
 }
 
+.logo-sign-up {
+  height: 75px;
+  margin-top: -25px;
+  margin-bottom: -20px;
+}
+
 
 .hero-overlay-bg{
   position: absolute;
@@ -74,5 +71,29 @@
 }
 
 #new_user input{
-  width: 22em;
+    background-color: #f7f6f5;
+    width: 25em;
+    height: 2em;
+    border-style: inset;
+    border: 3px solid #4AD9D9;
+    height: 50px;
+    margin-left: -25px;
+    border-radius: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#user_email {
+  background-color: white;
+}
+
+label {
+ color: #36B1BF;
+}
+
+
+.actions{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  background-color:#F5A503;
+  margin-top: 30px;
 }
