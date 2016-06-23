@@ -1,0 +1,23 @@
+<body class="tasks-me-page">
+
+<h1 id='task-header'><strong>My Tasks</strong></h1>
+<hr>
+<% @tasks.each do |task| %>
+
+<div class="task-div">
+  <ul class="task-list">
+    <li><strong><%= task.project.name %></strong></li>
+    <li>  <p class="task-name <%=task.state == 'completed' ? 'strike' : ""  %>" id='<%= task.id %>'><%= task.name %></p></li>
+    <li><button  type="button" class="btn btn-default btn-sml complete" data-id='<%= task.id %>' data-projectid='<%= task.project_id %>' >Mark as Complete!</button></li>
+  </ul>
+</div>
+<hr class='after-task'>
+
+<% end %>
+
+
+<div id="bottom-buttons">
+<%= link_to '<button type="button" class="btn btn-default btn-sml buttons">Browse Projects</button>'.html_safe, projects_path %>
+<%= link_to '<button type="button" class="btn btn-default btn-sml buttons">Dashboard</button>'.html_safe, dashboard_path %>
+</div>
+</body>

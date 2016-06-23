@@ -1,0 +1,332 @@
+// Place all the styles related to the projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import '_colors';
+@import '_fonts';
+@import '_grid';
+@import '_footer';
+
+
+.project-page {
+  background-color: $mdBlue;
+  text-align: center;
+  font-family: $base-font-family;
+
+  ul {
+    width: 300px;
+    height: 60px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+
+  }
+
+  .top-hr {
+    width: 500px;
+  }
+
+  hr {
+    width: 350px;
+  }
+
+  li {
+    list-style-type: none;
+    padding: 5px 40px 0 0;
+  }
+
+  a {
+    color: black;
+  }
+
+  h2 {
+    color: white;
+  }
+
+  h3 {
+    color: white;
+  }
+}
+
+.project-info {
+  color: white;
+  background-color: $mdBlue;
+  width: 500px;
+  margin: auto;
+  padding-top: 10px;
+
+  h2 {
+    font-weight: $bold;
+
+  }
+}
+
+button a {
+  color: black;
+  &:visited {
+    color: black;
+  }
+}
+
+.edit-task {
+  margin-right: 40px;
+  margin-bottom: 15px;
+}
+
+#add-task {
+  float: right;
+  margin-top: 5px;
+  margin-right: 35%;
+}
+
+.space {
+  height: 25px;
+}
+
+.tasks-in-progress {
+  li {
+    padding: 15px 40px -10px 0;
+  }
+}
+
+#edit-form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.button-row {
+  display: flex;
+  //justify-content: space-around;
+  flex-direction: row;
+  padding-left: 10px;
+
+  button {
+    margin: 0 5px 0 0px;
+  }
+}
+
+.projects {
+  text-align: center;
+  color: white;
+  background-color: #55649d;
+
+  #headerhr {
+    width: 500px;
+  }
+
+  .buttons {
+    margin: 10px 10px 60px 10px;
+    background-color: #13CBB8;
+    width: 125px;
+    border-radius: 3px;
+
+    &:hover {
+      color: white;
+    }
+    a {
+      color: white;
+      text-align: center;
+    }
+  }
+
+  .project-list {
+    text-align: center;
+    list-style-type: none;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-left: 0px;
+  }
+
+  .edit {
+    background-color: #13CBB8;
+    margin-top: 5px;
+    width: 125px;
+    border-radius: 3px;
+
+    &:hover {
+      color: white;
+    }
+    a {
+      color: white;
+      text-align: center;
+    }
+  }
+
+  .delete {
+    margin-top: 5px;
+    background-color: #CB4D39;
+    width: 125px;
+    border-radius: 3px;
+    margin-right: 4px;
+    margin-bottom: 10px;
+
+    &:hover {
+      color: white;
+    }
+    a {
+      color: white;
+      text-align: center;
+    }
+  }
+
+  #lastbutton {
+    margin-bottom: 5px;
+  }
+
+  .after-projects {
+    width: 300px;
+  }
+  .my-projects-hr {
+    width: 500px;
+  }
+
+  li a {
+  text-decoration: none;
+  color: black;
+
+    &:hover {
+      background-color: transparentize(gray, 0.5);
+    }
+  }
+
+  .project-list {
+    background-color: white;
+    color: black;
+  }
+
+  hr{
+    width: 350px;
+  }
+
+  h3{
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+
+}
+
+.new-project {
+  text-align: center;
+  background-color: $mdBlue;
+  color: white;
+
+  hr {
+    width: 500px;
+  }
+
+  input {
+    color: black;
+  }
+
+  .hr-small{
+    width: 350px;
+  }
+
+}
+
+.completed-tasks {
+  li {
+    margin-top: 15px;
+  }
+}
+
+textarea {
+  color: black;
+}
+
+#edit-delete-button-list {
+  list-style-type: none;
+  display: inline;
+  padding-left: 0px;
+}
+
+#back-button {
+  margin-bottom: 30px;
+  background-color: #13CBB8;
+  width: 125px;
+  border-radius: 3px;
+
+  &:hover {
+    color: white;
+  }
+  a {
+    color: white;
+    text-align: center;
+  }
+}
+
+.new-task-button {
+  background-color: #13CBB8;
+  width: 125px;
+  border-radius: 3px;
+
+  &:hover {
+    color: white;
+    background-color: #13CBB8;
+  }
+  a {
+    color: white;
+    text-align: center;
+    }
+}
+
+#project-name {
+  text-decoration: underline;
+}
+
+
+.field_with_errors {
+  margin:0 auto;
+
+}
+#error_explanation{
+  margin: 15px auto;
+  color:black;
+}
+.claim {
+  //margin-right: 25px;
+  margin-bottom: 4px;
+  background-color: #13CBB8;
+  width: 100px;
+  border-radius: 3px;
+  height: 32px;
+
+  &:hover {
+    color: white;
+    background-color: #13CBB8;
+  }
+  a {
+    color: white;
+    text-align: center;
+  }
+}
+
+.edit-task {
+  margin-right: 30px;
+  margin-bottom: 4px;
+  background-color: #13CBB8;
+  width: 100px;
+  border-radius: 3px;
+  height: 32px;
+
+  &:hover {
+    color: white;
+    background-color: #13CBB8;
+  }
+  a {
+    color: white;
+    text-align: center;
+  }
+}
+
+.claim-edit-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 10px;
+}

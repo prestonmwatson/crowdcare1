@@ -1,0 +1,53 @@
+<body class="projects">
+
+
+<!-- the notice <p> is not inititially visible -->
+<!-- page title header... need to make dynamic or turn this into a header above the nav element -->
+<div><h1>Browse Projects</h1></div>
+<hr id='headerhr'>
+
+<!-- checks to see if the user on the site is a current user -->
+<!-- wrapper div for login sign up section -->
+<div>
+<% if !current_user %>
+  <!-- note that styles are coming from the self.scaffolds stylesheed -->
+  <div class='log-in-buttons'>
+
+    <h2>New Users!</h2>
+
+    <button> <%= link_to "Sign Up", new_user_registration_path %> </button>
+    <br>
+    <h2>Existing Users!</h2>
+    <button> <%= link_to "Log In", new_user_session_path %> </button>
+  </div>
+
+  <% else %>
+
+ <% @projects.each do |project| %>
+<div class="all-projects">
+
+  <ul class="project-list">
+    <li><strong>Project</strong></li>
+    <li id='project-name'><%= link_to project.name, project_path(project) %></li>
+    <li><strong>Summary</strong></li>
+    <li><%= project.summary %></li>
+    <li><strong>Location</strong></li>
+    <li><%= project.location %></li>
+  </ul>
+  <hr>
+  <% end %>
+</div>
+
+<!-- closing div for login/sign up container -->
+
+  <br>
+  <div>
+    <h3>Want to start a new project?</h3>
+
+<%= link_to '<button type="button" class="btn btn-default btn-sml buttons">Create a Project</button>'.html_safe, new_project_path %>
+
+  </div>
+
+  <% end %>
+
+</body>
