@@ -8,6 +8,7 @@
   margin-bottom: 10%;
   padding-bottom: 50px;
   border: 5px solid #4AD9D9;
+  margin-left: 500px;
 
   #FormTitleArea{
     margin-top: 0;
@@ -71,7 +72,7 @@
 }
 
 #new_user input{
-    background-color: #f7f6f5;
+    background-color: white;
     width: 25em;
     height: 2em;
     border-style: inset;
@@ -80,6 +81,7 @@
     margin-left: -25px;
     border-radius: 0px;
     font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
 }
 
 #user_email {
@@ -94,6 +96,6 @@ label {
 .actions{
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
-  background-color:#F5A503;
+  // background-color:#F5A503;
   margin-top: 30px;
 }

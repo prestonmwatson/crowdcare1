@@ -20,5 +20,11 @@
     <% end %>
   </div>
 
-  <%= link_to '<button type="button" class="btn btn-default btn-sml buttons">Add a Project</button>'.html_safe, new_project_path %>
+  <div class="project-new-div">
+    <div class="new-project-button">
+      <h3 class="new-project-question">Want to start a new project?</h3>
+      <%= link_to '<button type="button" class="btn btn-default btn-lg buttons">Create New Project</button>'.html_safe, new_project_path %>
+    </div>
+  </div>
+
 </div>

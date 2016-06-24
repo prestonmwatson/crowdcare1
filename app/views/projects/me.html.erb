@@ -1,17 +1,16 @@
 <body class="projects">
-  <h1 id='project-header'><strong>My Projects</strong></h1>
-
-  <hr class='my-projects-hr'>
+  <h2 id='project-header'>My Projects</h2>
 
   <% @projects.each do |project| %>
 
   <div class="project-div">
     <ul class="project-list">
-      <li><strong>Project Name</strong></li>
-      <li><%= link_to project.name, project_path(project) %></li>
-      <li><strong>Summary</strong></li>
+      <div class="project-name-card">
+        <li class="project-name-li"><%= link_to project.name, project_path(project) %></li>
+      </div>
+      <li class="header-info"><strong>Summary</strong></li>
       <li><%= project.summary %></li>
-      <li><strong>Location</strong></li>
+      <li class="header-info"><strong>Location</strong></li>
       <li><%= project.location %></li>
       <ul id="edit-delete-button-list">
       <%= link_to '<button type="button" class="btn btn-default btn-sml edit">Edit Project</button>'.html_safe, edit_project_path(project) %>
@@ -24,8 +23,8 @@
 
   <% end %>
 
-  <%= link_to '<button type="button" class="btn btn-default btn-sml buttons">Add a Project</button>'.html_safe, new_project_path %>
-  <%= link_to '<button type="button" class="btn btn-default btn-sml buttons">Dashboard</button>'.html_safe, dashboard_path %>
+  <%= link_to '<button type="button" class="btn btn-default btn-sml my-project-buttons ">Add a Project</button>'.html_safe, new_project_path %>
+  <%= link_to '<button type="button" class="btn btn-default btn-sml my-project-buttons">Dashboard</button>'.html_safe, dashboard_path %>
 
 
 </body>
