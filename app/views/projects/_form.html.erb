@@ -10,20 +10,24 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :summary %><br>
-    <%= f.text_area :summary %>
-  </div>
-  <div class="field">
-    <%= f.label :location %><br>
-    <%= f.text_field :location %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-div">
+    <div class="entire-form">
+      <div class="field">
+        <h4 class="name-label"><%= f.label :name %></h4><br>
+        <%= f.text_field :name %>
+      </div>
+      <div class="field">
+        <%= f.label :summary %><br>
+        <%= f.text_area :summary %>
+      </div>
+      <div class="field">
+        <%= f.label :location %><br>
+        <%= f.text_field :location %>
+      </div>
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+       <%= link_to '<button type="button" id="back-button" class="btn btn-default btn-sml buttons">Back</button>'.html_safe, projects_path %>
+    </div>
   </div>
 <% end %>
