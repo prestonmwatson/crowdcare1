@@ -3,8 +3,7 @@
 
 <!-- the notice <p> is not inititially visible -->
 <!-- page title header... need to make dynamic or turn this into a header above the nav element -->
-<div><h1>Browse Projects</h1></div>
-<hr id='headerhr'>
+<div><h1 class="browse-header">Browse Active Projects</h1></div>
 
 <!-- checks to see if the user on the site is a current user -->
 <!-- wrapper div for login sign up section -->
@@ -27,26 +26,24 @@
 <div class="all-projects">
 
   <ul class="project-list">
-    <li><strong>Project</strong></li>
     <li id='project-name'><%= link_to project.name, project_path(project) %></li>
-    <li><strong>Summary</strong></li>
-    <li><%= project.summary %></li>
-    <li><strong>Location</strong></li>
-    <li><%= project.location %></li>
+    <li><strong class="project-summary">Project Summary:</strong></li>
+    <li class="project-summary-blurb"><%= project.summary %></li>
+    <li><strong class="project-location-index">Project Location:</strong></li>
+    <li class="project-location-bottom"><%= project.location %></li>
   </ul>
-  <hr>
   <% end %>
 </div>
 
 <!-- closing div for login/sign up container -->
 
-  <br>
-  <div>
-    <h3>Want to start a new project?</h3>
-
-<%= link_to '<button type="button" class="btn btn-default btn-sml buttons">Create a Project</button>'.html_safe, new_project_path %>
-
+ <div class="project-new-div">
+    <div class="new-project-button">
+      <h3 class="new-project-question">Want to start a new project?</h3>
+      <%= link_to '<button type="button" class="btn btn-default btn-lg project-new-button">Create New Project</button>'.html_safe, new_project_path %>
+    </div>
   </div>
+
 
   <% end %>
 

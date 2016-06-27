@@ -14,7 +14,7 @@
 .tasks-me-page {
   text-align: center;
   color: black;
-  background-color: #55649d;
+  background-color: white;
 
   #task-header{
     text-align: center;
@@ -34,7 +34,7 @@
   .buttons {
     margin: 10px 10px 60px 10px;
     background-color: #13CBB8;
-    width: 125px;
+    width: 200px;
     border-radius: 3px;
 
     &:hover {
@@ -49,14 +49,14 @@
   .task-list {
     text-align: center;
     list-style-type: none;
-    width: 300px;
-    border: 2px solid black;
-    border-radius: 5px;
+    width: 400px;
+    border: 2px solid #F2385A;
+    border-radius: 0px;
     margin: auto;
-    margin-bottom: 20px;
-    margin-top: 20px;
     padding-left: 0px;
     background-color: white;
+    height: 250px;
+    margin-top: 25px;
   }
 
   .after-task {
@@ -79,10 +79,20 @@
 }
 
 button.btn.btn-default.btn-sml.complete{
-      background-color: #13CBB8;
-      color:black;
+      background-color: #F5A503;
+      color:white;
+      margin-top: 30px;
+      background-color: #F5A503;
+      margin-top: 15px;
+      width: 200px;
+      height: 40px;
+      border: 2px solid #F5A503;
+      font-size: 18px;
+
       &:hover{
-        color:white;
+        color:#F5A503;
+        border: 2px solid #F5A503;
+        background-color: white;
       }
 }
 
@@ -97,3 +107,58 @@ label {
   font-size: 20px;
 }
 
+.my-task-name {
+  color: white;
+  background-color: #4AD9D9;
+  height: 60px;
+  padding-top: 15px;
+}
+
+.my-task-header {
+  color: black;
+}
+
+.task-task-header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  margin-top: 30px;
+}
+
+.task-name {
+  margin-top: -10px;
+}
+
+.my-task-buttons {
+    background-color: #F5A503;
+    width: 200px;
+    height: 45px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border: 2px solid #F5A503;
+    font-size: 18px;
+    margin-bottom: 40px;
+    margin-top: 45px;
+}
+
+.my-task-buttons:hover {
+    background-color: white;
+    width: 200px;
+    height: 45px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border: 2px solid #F5A503;
+    font-size: 18px;
+    margin-bottom: 40px;
+    margin-top: 45px;
+    color: #F5A503
+}
+
+.my-task-name strong a {
+  font-size: 22px;
+}
+
+.my-task-name strong a:hover {
+  color: #F2385A;
+  background-color: #4AD9D9;
+  text-decoration: underline;
+}
