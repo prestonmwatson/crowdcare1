@@ -68,11 +68,11 @@
     border-style: inset;
     border: 3px solid #4AD9D9;
     height: 50px;
-    margin-left: -25px;
     border-radius: 0px;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     color: black;
+    margin-left: -10px;
 
 }
 
@@ -109,3 +109,18 @@ label {
   height: 40px;
   margin-left: 60px;
 }
+
+#logindeviseWrapperOutside {
+  background-color: white;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding-bottom: 50px;
+  border: 5px solid #4AD9D9;
+  width: 500px;
+}
+
+.devise-links {
+  margin-left: 70px;
+  width: 250px;
+}
+
