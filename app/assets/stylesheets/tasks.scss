@@ -1,0 +1,165 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import '_colors';
+@import '_fonts';
+@import '_grid';
+
+.strike {
+  text-decoration: line-through;
+  color: #24CB6A;
+  font-weight: bold;
+}
+
+.tasks-me-page {
+  text-align: center;
+  color: black;
+  background-color: white;
+
+  #task-header{
+    text-align: center;
+    color: white;
+  }
+
+  #bottom-buttons{
+    margin: auto;
+  }
+
+
+  .complete{
+    background-color: #24CB6A;
+    color: white;
+  }
+
+  .buttons {
+    margin: 10px 10px 60px 10px;
+    background-color: #13CBB8;
+    width: 200px;
+    border-radius: 3px;
+
+    &:hover {
+      color: white;
+    }
+
+    a {
+      color: white;
+    }
+  }
+
+  .task-list {
+    text-align: center;
+    list-style-type: none;
+    width: 400px;
+    border: 2px solid #F2385A;
+    border-radius: 0px;
+    margin: auto;
+    padding-left: 0px;
+    background-color: white;
+    height: 250px;
+    margin-top: 25px;
+  }
+
+  .after-task {
+    width: 300px;
+  }
+
+  hr {
+    width: 500px;
+  }
+
+  li .complete {
+    margin-bottom: 10px;
+
+    &:hover {
+
+      background-color: #24CB6A;
+
+    }
+  }
+}
+
+button.btn.btn-default.btn-sml.complete{
+      background-color: #F5A503;
+      color:white;
+      margin-top: 30px;
+      background-color: #F5A503;
+      margin-top: 15px;
+      width: 200px;
+      height: 40px;
+      border: 2px solid #F5A503;
+      font-size: 18px;
+
+      &:hover{
+        color:#F5A503;
+        border: 2px solid #F5A503;
+        background-color: white;
+      }
+}
+
+#new-task h1 {
+  color: white;
+}
+
+label {
+  color: black;
+  margin-top: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+.my-task-name {
+  color: white;
+  background-color: #4AD9D9;
+  height: 60px;
+  padding-top: 15px;
+}
+
+.my-task-header {
+  color: black;
+}
+
+.task-task-header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  margin-top: 30px;
+}
+
+.task-name {
+  margin-top: -10px;
+}
+
+.my-task-buttons {
+    background-color: #F5A503;
+    width: 200px;
+    height: 45px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border: 2px solid #F5A503;
+    font-size: 18px;
+    margin-bottom: 40px;
+    margin-top: 45px;
+}
+
+.my-task-buttons:hover {
+    background-color: white;
+    width: 200px;
+    height: 45px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border: 2px solid #F5A503;
+    font-size: 18px;
+    margin-bottom: 40px;
+    margin-top: 45px;
+    color: #F5A503
+}
+
+.my-task-name strong a {
+  font-size: 22px;
+  color: white;
+}
+
+.my-task-name strong a:hover {
+  color: #F2385A;
+  background-color: #4AD9D9;
+  text-decoration: underline;
+}

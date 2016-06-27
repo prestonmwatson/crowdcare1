@@ -1,0 +1,532 @@
+// Place all the styles related to the projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import '_colors';
+@import '_fonts';
+@import '_grid';
+@import '_footer';
+
+
+.project-page {
+  background-color: white;
+  text-align: center;
+  font-family: $base-font-family;
+
+  ul {
+    width: 300px;
+    border: 2px solid #F5A503;
+    background-color: #F5A503;
+    margin: auto;
+    margin-top: 20px;
+    color: white;
+    height: 100px;
+  }
+
+  .top-hr {
+    width: 500px;
+  }
+
+  hr {
+    width: 350px;
+  }
+
+  li {
+    list-style-type: none;
+    padding: 5px 40px 0 0;
+  }
+
+  a {
+    color: black;
+  }
+
+  h2 {
+    color: white;
+  }
+
+  .black-header {
+    color: black;
+  }
+
+  h3 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+  }
+
+  h4{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+  }
+  .project-header {
+    background-color: white;
+  }
+
+  .project-page-header{
+    color: black;
+
+  }
+}
+
+.project-info {
+  color: black;
+  width: 500px;
+  margin: auto;
+  border: 3px solid #F2385A;
+
+  h2 {
+    font-weight: $bold;
+
+  }
+}
+
+button a {
+  color: black;
+  &:visited {
+    color: black;
+  }
+}
+
+.edit-task {
+  margin-right: 40px;
+  margin-bottom: 15px;
+}
+
+#add-task {
+  float: right;
+  margin-top: 5px;
+  margin-right: 35%;
+}
+
+.tasks-in-progress {
+  li {
+    padding: 15px 40px -10px 0;
+  }
+}
+
+#edit-form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.button-row {
+  display: flex;
+  //justify-content: space-around;
+  flex-direction: row;
+  padding-left: 10px;
+
+  button {
+    margin: 0 5px 0 0px;
+  }
+}
+
+.projects {
+  text-align: center;
+  color: black;
+  background-color: white;
+
+  #headerhr {
+    width: 500px;
+  }
+
+  .buttons {
+    margin: 10px 10px 60px 10px;
+    background-color: #13CBB8;
+    width: 125px;
+    border-radius: 3px;
+
+    &:hover {
+      color: white;
+    }
+    a {
+      color: white;
+      text-align: center;
+    }
+  }
+
+  .project-list {
+    text-align: center;
+    list-style-type: none;
+    width: 400px;
+    border: 2px solid #F2385A;
+    margin: auto;
+    margin-top: 20px;
+    padding-left: 0px;
+    // height: 250px;
+    margin-top: 30px;
+
+  }
+
+  .edit {
+    background-color: #F5A503;
+    margin-top: 15px;
+    width: 200px;
+    height: 40px;
+    border: 2px solid #F5A503;
+    font-size: 18px;
+
+    &:hover {
+      color: #F5A503;
+      border: 2px solid #F5A503;
+      background-color: white;
+
+
+    }
+    a {
+      color: white;
+      text-align: center;
+    }
+  }
+
+  .delete {
+    margin-top: 10px;
+    background-color: #F2385A;
+    width: 200px;
+    margin-right: 4px;
+    margin-bottom: 15px;
+    height: 40px;
+    font-size: 18px;
+
+    &:hover {
+      color: #F2385A;
+      border: 2px solid #F2385A;
+      background-color: white;
+    }
+    a {
+      color: white;
+      text-align: center;
+    }
+  }
+
+  #lastbutton {
+    margin-bottom: 5px;
+  }
+
+  .after-projects {
+    width: 300px;
+  }
+  .my-projects-hr {
+    width: 500px;
+  }
+
+  li a {
+  text-decoration: none;
+  color: black;
+
+    &:hover {
+      background-color: transparentize(gray, 0.5);
+    }
+  }
+
+  .project-list {
+    background-color: white;
+    color: black;
+  }
+
+  hr{
+    width: 350px;
+  }
+
+  h3{
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+
+}
+
+.new-project {
+  text-align: center;
+  background-color: white;
+  color: black;
+
+  hr {
+    width: 500px;
+  }
+
+  input {
+    color: black;
+    width: 300px;
+    border: 3px solid #4AD9D9;
+    font-size: 18px;
+    height: 45px;
+  }
+
+  .hr-small{
+    width: 350px;
+  }
+
+}
+
+.completed-tasks {
+  padding-bottom: 25px;
+
+  li {
+    margin-top: 15px;
+  }
+}
+
+textarea {
+  color: black;
+  width: 300px;
+  border: 3px solid #4AD9D9;
+
+}
+
+#edit-delete-button-list {
+  list-style-type: none;
+  display: inline;
+  padding-left: 0px;
+}
+
+#back-button {
+  background-color: #F2385A;
+  width: 200px;
+  border: 3px solid #F2385A;
+  font-size: 18px;
+
+  &:hover {
+    color: #F2385A;
+    background-color: white;
+    border: 3px solid #F2385A;
+
+  }
+  a {
+    color: white;
+    text-align: center;
+  }
+}
+
+.new-task-button {
+  background-color: #F2385A;
+  width: 125px;
+  border-radius: 3px;
+  border: 2px solid #F2385A;
+  margin-top: 25px;
+  font-family: 'Montserrat', sans-serif;
+
+  &:hover {
+    color: #F2385A;
+    background-color: white;
+    border: 2px solid #F2385A;
+  }
+  a {
+    color: white;
+    text-align: center;
+    }
+}
+
+#project-name {
+  background-color: #4AD9D9;
+  height: 60px;
+  padding-top: 15px;
+  margin-bottom: 20px;
+}
+
+
+.field_with_errors {
+  margin:0 auto;
+
+}
+#error_explanation{
+  margin: 15px auto;
+  color:black;
+}
+.claim {
+    margin-bottom: 4px;
+    background-color: #F2385A;
+    border: 0px;
+    margin-top: 10px;
+
+  &:hover {
+    color: #F2385A;
+    background-color: white;
+  }
+  a {
+    color: white;
+    text-align: center;
+  }
+}
+
+.edit-task {
+  margin-right: 30px;
+  margin-bottom: 4px;
+  background-color: #4AD9D9;
+  width: 100px;
+  margin-top: 10px;
+
+  &:hover {
+    color: #4AD9D9;
+    background-color: white;
+  }
+  a {
+    color: white;
+    text-align: center;
+  }
+}
+
+.claim-edit-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 10px;
+}
+
+.summary {
+  margin-top: 30px;
+}
+
+.avail-h3 {
+  color: white;
+  padding-top: 15px;
+  size: 30px;
+  font-weight: bold;
+}
+
+.avail-task-header {
+  background-color: #36B1BF;
+  height: 60px;
+  color: white;
+}
+
+.btn {
+  border-radius: 0px;
+}
+
+.btn-default {
+  color: white;
+}
+
+#project-summary{
+  font-size: 15px;
+}
+
+#location {
+  font-size: 15px;
+}
+
+.completed-task-margin {
+  padding-bottom: 15px;
+}
+
+.form-div {
+  width: 500px;
+  margin:auto;
+}
+
+.entire-form {
+  border: 3px solid #F2385A;
+}
+
+.name-label {
+  color: black;
+}
+
+input[type="submit"] {
+  background-color: #F5A503;
+  border: 3px solid #F5A503;
+  color: white;
+  width: 200px;
+  height: 40px;
+  }
+
+input[type="submit"]:hover {
+  background-color: white;
+  color: #F5A503;
+  border: 3px solid #F5A503;
+  width: 200px;
+  height: 40px;
+  }
+
+
+.myprojects {
+  color: black;
+}
+
+.project-name-card {
+  height: 60px;
+  background-color:  #4AD9D9;
+  padding-top: 15px;
+}
+
+
+.projects li a {
+  color: white;
+  font-size: 22px;
+}
+
+.header-info {
+  margin-top: 15px;
+}
+
+.projects li a:hover {
+  color: #F2385A;
+  background-color: #4AD9D9;
+  text-decoration: underline;
+}
+
+.my-project-buttons {
+  background-color: #F5A503;
+  width: 200px;
+  height: 45px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border: 2px solid #F5A503;
+  font-size: 18px;
+  margin-bottom: 40px;
+  margin-top: 45px;
+}
+
+.my-project-buttons:hover {
+  background-color: white;
+  color: #F5A503;
+  width: 200px;
+  height: 45px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border: 2px solid #F5A503;
+}
+
+.project-summary {
+  padding-top: 15px;
+}
+
+.project-location-index {
+
+}
+
+
+.project-summary-blurb {
+  margin-bottom: 15px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.project-location-bottom {
+  margin-bottom: 40px;
+}
+
+.browse-header {
+  margin-bottom: 40px;
+}
+
+.project-new-button {
+    margin: 10px 10px 60px 10px;
+    width: 300px;
+    background-color: #F5A503;
+    border-radius: 0px;
+    color: white;
+    border: 3px solid white;
+}
+
+.project-new-button:hover {
+    margin: 10px 10px 60px 10px;
+    width: 300px;
+    background-color: white;
+    border-radius: 0px;
+    color: #F5A503;
+    border: 3px solid #F5A503;
+}
+
+.project-name-h2 {
+  margin-top: 0px;
+}

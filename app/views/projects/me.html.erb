@@ -1,0 +1,29 @@
+<body class="projects">
+  <h2 id='project-header'>My Projects</h2>
+
+  <% @projects.each do |project| %>
+
+  <div class="project-div">
+    <ul class="project-list">
+      <div class="project-name-card">
+        <li class="project-name-li"><%= link_to project.name, project_path(project) %></li>
+      </div>
+      <li class="header-info"><strong>Summary</strong></li>
+      <li><%= project.summary %></li>
+      <li class="header-info"><strong>Location</strong></li>
+      <li><%= project.location %></li>
+      <ul id="edit-delete-button-list">
+      <%= link_to '<button type="button" class="btn btn-default btn-sml edit">Edit Project</button>'.html_safe, edit_project_path(project) %>
+      <br>
+      <%= link_to '<button type="button" class="btn btn-default btn-sml delete">Delete Project</button>'.html_safe, project_path(project), method: :delete, data: { confirm: 'Are you sure?' } %>
+      </ul>
+    </ul>
+  </div>
+
+  <% end %>
+
+  <%= link_to '<button type="button" class="btn btn-default btn-sml my-project-buttons ">Add a Project</button>'.html_safe, new_project_path %>
+  <%= link_to '<button type="button" class="btn btn-default btn-sml my-project-buttons">Dashboard</button>'.html_safe, dashboard_path %>
+
+
+</body>
