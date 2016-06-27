@@ -19,7 +19,7 @@
     margin: auto;
     margin-top: 20px;
     color: white;
-
+    height: 100px;
   }
 
   .top-hr {
@@ -303,6 +303,7 @@ textarea {
   border-radius: 3px;
   border: 2px solid #F2385A;
   margin-top: 25px;
+  font-family: 'Montserrat', sans-serif;
 
   &:hover {
     color: #F2385A;
@@ -335,6 +336,7 @@ textarea {
     margin-bottom: 4px;
     background-color: #F2385A;
     border: 0px;
+    margin-top: 10px;
 
   &:hover {
     color: #F2385A;
@@ -351,7 +353,7 @@ textarea {
   margin-bottom: 4px;
   background-color: #4AD9D9;
   width: 100px;
-
+  margin-top: 10px;
 
   &:hover {
     color: #4AD9D9;
