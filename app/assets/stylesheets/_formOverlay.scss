@@ -38,16 +38,6 @@
   padding: 1.5em;
   width: 25em;
   border-radius: .7em;
-
-  input{
-    // margin-left: 2em;
-    background-color: lighten($grey, 20%);
-    width: 25em;
-    height: 2em;
-    border-style: inset;
-    border-color: transparentize($grey,.3);
-    border-radius: .5em;
-  }
 }
 
 .field-txt{
@@ -55,7 +45,7 @@
 }
 
 .logo-sign-up {
-  height: 75px;
+  height: 80px;
   margin-top: -25px;
   margin-bottom: -20px;
 }
@@ -81,7 +71,9 @@
     margin-left: -25px;
     border-radius: 0px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: 15px;
+    color: black;
+
 }
 
 #user_email {
@@ -98,4 +90,22 @@ label {
   font-size: 13px;
   // background-color:#F5A503;
   margin-top: 30px;
+}
+
+#new_user input[type="submit"] {
+  background-color: #F5A503;
+  border: 3px solid #F5A503;
+  color: white;
+  width: 200px;
+  height: 40px;
+  margin-left: 60px;
+}
+
+#new_user input[type="submit"]:hover {
+  background-color: white;
+  border: 3px solid #F5A503;
+  color: #F5A503;
+  width: 200px;
+  height: 40px;
+  margin-left: 60px;
 }

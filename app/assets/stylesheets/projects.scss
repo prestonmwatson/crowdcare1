@@ -150,11 +150,11 @@ button a {
     list-style-type: none;
     width: 400px;
     border: 2px solid #F2385A;
-    /* border-radius: 5px; */
     margin: auto;
-    /* margin-bottom: 20px; */
     margin-top: 20px;
     padding-left: 0px;
+    // height: 250px;
+    margin-top: 30px;
 
   }
 
@@ -318,7 +318,8 @@ textarea {
 #project-name {
   background-color: #4AD9D9;
   height: 60px;
-  padding-top: 1px;
+  padding-top: 15px;
+  margin-bottom: 20px;
 }
 
 
@@ -470,6 +471,7 @@ input[type="submit"]:hover {
   border: 2px solid #F5A503;
   font-size: 18px;
   margin-bottom: 40px;
+  margin-top: 45px;
 }
 
 .my-project-buttons:hover {
@@ -480,4 +482,49 @@ input[type="submit"]:hover {
   margin-right: 20px;
   margin-left: 20px;
   border: 2px solid #F5A503;
+}
+
+.project-summary {
+  padding-top: 15px;
+}
+
+.project-location-index {
+
+}
+
+
+.project-summary-blurb {
+  margin-bottom: 15px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.project-location-bottom {
+  margin-bottom: 40px;
+}
+
+.browse-header {
+  margin-bottom: 40px;
+}
+
+.project-new-button {
+    margin: 10px 10px 60px 10px;
+    width: 300px;
+    background-color: #F5A503;
+    border-radius: 0px;
+    color: white;
+    border: 3px solid white;
+}
+
+.project-new-button:hover {
+    margin: 10px 10px 60px 10px;
+    width: 300px;
+    background-color: white;
+    border-radius: 0px;
+    color: #F5A503;
+    border: 3px solid #F5A503;
+}
+
+.project-name-h2 {
+  margin-top: 0px;
 }
